@@ -26,6 +26,11 @@ public class GASGameplayFeatureActions : ModuleRules
 			new string[]
 			{
 				"Core",
+				"GameplayAbilities",
+				"EnhancedInput",
+				"GASFramework",
+				"GameFeatures",
+				"ModularGameplay"
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -39,14 +44,6 @@ public class GASGameplayFeatureActions : ModuleRules
 				"Slate",
 				"SlateCore",
 				// ... add private dependencies that you statically link with here ...	
-			}
-			);
-		
-		
-		DynamicallyLoadedModuleNames.AddRange(
-			new string[]
-			{
-				// ... add any modules that your module loads dynamically here ...
 			}
 			);
 	}

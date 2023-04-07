@@ -2,14 +2,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
-#include "Modules/ModuleManager.h"
+#include "Logging/LogMacros.h"
 
-class FGASGameplayFeatureActionsModule : public IModuleInterface
-{
-public:
-
-	/** IModuleInterface implementation */
-	virtual void StartupModule() override;
-	virtual void ShutdownModule() override;
-};
+DECLARE_LOG_CATEGORY_EXTERN(LogGASGameplayFeatureActions, Log, All);
